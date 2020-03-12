@@ -27,9 +27,25 @@ sbdata <- read_csv(here("data", "sbraindata.rda"))
 
 ## Removing NA values from the data 
 ```{r}
-sbdata$X7 <- NULL
+x$V7 <- NULL
 
 #Removing all of the NA values from the X7 column making it completely gone 
+```
+
+## Experimentation with the data to make sure the dang package works! 
+```{r}
+#Need to load sbraindata.rda into the workspace in order for the functions to work 
+#File will read as x which is then written into the functions 
+
+trial_1 <- flooding(probability, land_size = 41.99, maximum = 2.02)
+#trial_1 is 0.848198
+
+trial_2 <- maximum(rainvalue)
+#trial_2 is 2.02
+
+trial_3 <- minimum(rainnum)
+#trial 3 is 0.01
+
 ```
 
 

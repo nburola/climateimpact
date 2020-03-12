@@ -7,7 +7,7 @@
 
 maximum = function(rainvalue) {
 
-  rainvalue = max(sbdata$daily_rain)
+  rainvalue = max(x$daily_rain)
 
   results = (rainvalue)
 

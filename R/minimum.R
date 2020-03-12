@@ -7,7 +7,7 @@
 
 minimum = function(rainnum) {
 
-  rainnum = min(sbdata$daily_rain)
+  rainnum = min(x$daily_rain)
 
   results = (rainnum)
 
