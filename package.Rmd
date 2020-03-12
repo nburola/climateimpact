@@ -22,7 +22,7 @@ library(rio)
 
 ## Reading in the data with the here package 
 ```{r}
-sbdata <- read_csv(here("data", "sbraindata.csv"))
+sbdata <- read_csv(here("data", "sbraindata.rda"))
 ```
 
 ## Removing NA values from the data 
@@ -32,10 +32,7 @@ sbdata$X7 <- NULL
 #Removing all of the NA values from the X7 column making it completely gone 
 ```
 
-## Converting the R files into the /Rda file 
-```{r}
-convert("data/sbraindata.csv", "sbraindata.rda")
-```
+
 
 
 
