@@ -1,0 +1,41 @@
+---
+title: "ESM 262: Computing for Environmental Science and Management (Assignment 3)"
+author: "Nathaniel Burola"
+date: "3/11/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Attaching packages 
+```{r}
+library(rainbow)
+library(tidyverse)
+library(here)
+library(devtools)
+library(roxygen2)
+library(Rd2roxygen)
+library(rio)
+```
+
+## Reading in the data with the here package 
+```{r}
+sbdata <- read_csv(here("data", "sbraindata.csv"))
+```
+
+## Removing NA values from the data 
+```{r}
+sbdata$X7 <- NULL
+
+#Removing all of the NA values from the X7 column making it completely gone 
+```
+
+## Converting the R files into the /Rda file 
+```{r}
+convert("data/sbraindata.csv", "sbraindata.rda")
+```
+
+
+
